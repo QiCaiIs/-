@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xiaozhao1_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ACo-n9-uby">
+                                <rect key="frame" x="38" y="121" width="298" height="215"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seJ-Qa-4fQ">
+                                <rect key="frame" x="38" y="501" width="37" height="30"/>
+                                <state key="normal" title="站立"/>
+                                <connections>
+                                    <action selector="standAnimation" destination="BYZ-38-t0r" eventType="touchUpInside" id="DY1-DJ-7Pb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrg-8B-FdP">
+                                <rect key="frame" x="169" y="501" width="37" height="30"/>
+                                <state key="normal" title="小招1"/>
+                                <connections>
+                                    <action selector="xiaoZhao" destination="BYZ-38-t0r" eventType="touchUpInside" id="KiH-ri-dr7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xQ-z5-vZv">
+                                <rect key="frame" x="299" y="501" width="37" height="30"/>
+                                <state key="normal" title="大招"/>
+                                <connections>
+                                    <action selector="daZhao" destination="BYZ-38-t0r" eventType="touchUpInside" id="2pV-Ct-PYz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdh-6d-HX3">
+                                <rect key="frame" x="38" y="580" width="37" height="30"/>
+                                <state key="normal" title="run"/>
+                                <connections>
+                                    <action selector="run" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsE-WZ-0lh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe0-mD-did">
+                                <rect key="frame" x="157" y="580" width="61" height="30"/>
+                                <state key="normal" title="install_b"/>
+                                <connections>
+                                    <action selector="instabll" destination="BYZ-38-t0r" eventType="touchUpInside" id="197-oX-eaB"/>
+                                    <action selector="standAnimation" destination="BYZ-38-t0r" eventType="touchUpInside" id="BcO-bi-Fb0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPq-e2-TMR">
+                                <rect key="frame" x="299" y="580" width="37" height="30"/>
+                                <state key="normal" title="dead"/>
+                                <connections>
+                                    <action selector="dead" destination="BYZ-38-t0r" eventType="touchUpInside" id="2yV-Lz-G8I"/>
+                                    <action selector="standAnimation" destination="BYZ-38-t0r" eventType="touchUpInside" id="63g-mU-veM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="images" destination="ACo-n9-uby" id="QXc-ut-kdr"/>
+                        <outlet property="stopAnimation" destination="UPq-e2-TMR" id="Ym5-Nh-A8Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="377.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xiaozhao1_1.png" width="249" height="119"/>
+    </resources>
+</document>
